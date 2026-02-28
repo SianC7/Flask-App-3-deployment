@@ -3,7 +3,7 @@
 from flask import Flask, render_template, request, redirect
 import sqlite3
 
-app = Flask(__name__)
+app = Flask(__name__) # create Flask app instance
 DATABASE = 'contacts.db'
 
 def init_db():
